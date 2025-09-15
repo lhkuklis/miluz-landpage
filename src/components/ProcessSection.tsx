@@ -28,7 +28,7 @@ const ProcessSection = () => {
   return (
     <section id="process" className="py-20 bg-[#f8fafc] text-center">
       <div className="container mx-auto px-6 sm:px-4">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#39175d] mb-3 sm:mb-4">
+        <h2 className="heading-2 mb-3 sm:mb-4">
           {t('home.process.title')}
         </h2>
         <p className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-[#39175d]/80 mb-8 sm:mb-16 px-4">

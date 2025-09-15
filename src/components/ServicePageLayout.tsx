@@ -52,7 +52,7 @@ const ServicePageLayout: React.FC<ServicePageLayoutProps> = ({
                 <Icon className="h-10 w-10 text-white" />
               </div>
               
-              <h1 className="text-4xl md:text-5xl font-bold text-miluz-purple mb-6">
+              <h1 className="heading-1 mb-6">
                 {t(`services.${serviceKey}.title`)}
               </h1>
               
@@ -75,7 +75,7 @@ const ServicePageLayout: React.FC<ServicePageLayoutProps> = ({
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-miluz-purple text-center mb-12">
+            <h2 className="heading-2 text-center mb-12">
               {t('service.features.title')}
             </h2>
             
@@ -97,7 +97,7 @@ const ServicePageLayout: React.FC<ServicePageLayoutProps> = ({
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-miluz-purple text-center mb-12">
+            <h2 className="heading-2 text-center mb-12">
               {t('service.process.title')}
             </h2>
             
@@ -121,7 +121,7 @@ const ServicePageLayout: React.FC<ServicePageLayoutProps> = ({
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-miluz-purple text-center mb-12">
+            <h2 className="heading-2 text-center mb-12">
               {t('service.benefits.title')}
             </h2>
             

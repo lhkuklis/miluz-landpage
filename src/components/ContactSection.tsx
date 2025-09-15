@@ -88,7 +88,7 @@ const ContactSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#39175d] mb-4 animate-fade-in">
+            <h2 className="heading-2 mb-4 animate-fade-in">
               {t('contact.title')}
             </h2>
           </div>

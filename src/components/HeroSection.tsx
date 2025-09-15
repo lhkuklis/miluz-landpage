@@ -46,7 +46,7 @@ const HeroSection = () => {
           </div>
 
           {/* Main Title */}
-          <h1 className="text-5xl sm:text-6xl md:text-8xl font-black mb-8 tracking-tight leading-[0.9] text-white drop-shadow-2xl">
+          <h1 className="heading-1 mb-8 leading-[0.9] text-white drop-shadow-2xl">
             Your Strategic <HighlightedText>IT</HighlightedText> Talent Partner
           </h1>
 

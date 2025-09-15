@@ -52,7 +52,7 @@ const SpecialtiesSection = () => {
   const { t } = useLanguage();
   return (
     <section id="specialties" className="py-20 bg-white text-center">
-      <h2 className="text-4xl md:text-5xl font-extrabold text-[#39175d] mb-4">
+      <h2 className="heading-2 mb-4">
         {t('home.specialties.title')}
       </h2>
       <p className="max-w-3xl mx-auto text-lg md:text-xl text-[#39175d]/80 mb-12">

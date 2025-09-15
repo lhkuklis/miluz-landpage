@@ -15,7 +15,7 @@ const WhyChooseSection = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div>
-                <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#39175d] mb-6 tracking-tight leading-tight">
+                <h2 className="heading-2 mb-6 tracking-tight leading-tight">
                   {t('home.whychoose.title')}
                 </h2>
                 <p className="text-xl sm:text-2xl text-[#39175d]/70 leading-relaxed font-light">

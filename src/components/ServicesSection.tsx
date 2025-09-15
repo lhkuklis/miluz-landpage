@@ -51,7 +51,7 @@ const ServicesSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#39175d] mb-4 animate-fade-in">
+            <h2 className="heading-2 mb-4 animate-fade-in">
               <HighlightedText>{t('services.title')}</HighlightedText>
             </h2>
           </div>

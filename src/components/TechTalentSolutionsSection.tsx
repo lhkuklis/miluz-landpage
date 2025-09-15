@@ -9,7 +9,7 @@ const TechTalentSolutionsSection = () => {
     <section id="techtalentsolutions" className="py-24 bg-gradient-to-b from-white to-slate-50 text-center">
       <div className="container mx-auto px-6 sm:px-4">
         <div className="max-w-4xl mx-auto mb-16">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#39175d] mb-6 tracking-tight">
+          <h2 className="heading-2 mb-6 tracking-tight">
             {t('home.techTalent.title')}
           </h2>
           <p className="text-xl sm:text-2xl text-[#39175d]/70 leading-relaxed font-light">
