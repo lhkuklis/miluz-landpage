@@ -25,9 +25,7 @@ const Footer = () => {
                 className="h-10 w-auto mx-auto md:mx-0"
               />
             </div>
-            <p className="text-[#39175d]/80 leading-relaxed max-w-xs mx-auto md:mx-0">
-              {t('footer.description')}
-            </p>
+            {/* Description removed per request */}
             <div className="flex justify-center md:justify-start space-x-3 mt-2">
               <a
                 href="https://www.linkedin.com/company/miluz1"
