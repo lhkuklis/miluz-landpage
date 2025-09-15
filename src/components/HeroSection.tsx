@@ -47,7 +47,7 @@ const HeroSection = () => {
 
           {/* Main Title */}
           <h1 className="heading-1 mb-8 leading-[0.9] text-white drop-shadow-2xl">
-            Your Strategic <HighlightedText>IT</HighlightedText> Talent Partner
+            Your Strategic <HighlightedText className="font-bold">IT</HighlightedText> Talent Partner
           </h1>
 
           {/* Subtitle */}
