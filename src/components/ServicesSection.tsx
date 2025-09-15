@@ -9,7 +9,7 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Search,
-      title: <HighlightedText>Monthly Subscription</HighlightedText>,
+  title: <HighlightedText className="text-[#39175d]">Monthly Subscription</HighlightedText>,
       description: (
         <>
           <span>
@@ -27,7 +27,7 @@ const ServicesSection = () => {
     },
     {
       icon: UserCheck,
-      title: <HighlightedText>On-Demand Recruitment</HighlightedText>,
+  title: <HighlightedText className="text-[#39175d]">On-Demand Recruitment</HighlightedText>,
       description: (
         <>
           <span>
