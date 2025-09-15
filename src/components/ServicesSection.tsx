@@ -1,12 +1,10 @@
 import React from 'react';
 import { Search, UserCheck, Lightbulb, Crown } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import HighlightedText from './HighlightedText';
 
 const ServicesSection = () => {
   const { t } = useLanguage();
-  // Importando o componente de destaque
-  // @ts-ignore
-  const HighlightedText = require('./HighlightedText').default;
 
   const services = [
     {
