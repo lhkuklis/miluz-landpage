@@ -11,6 +11,9 @@ export default {
 	],
 	prefix: "",
 	theme: {
+		fontFamily: {
+			sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Cantarell", "Helvetica Neue", "Arial", "sans-serif"],
+		},
 		container: {
 			center: true,
 			padding: '2rem',

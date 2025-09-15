@@ -22,7 +22,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#39175d] via-[#0072B1] to-[#00e6c3] font-[Inter,sans-serif]">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#39175d] via-[#0072B1] to-[#00e6c3]">
       {/* Modern Background Pattern */}
       <div className="absolute inset-0 opacity-30 pointer-events-none select-none">
         <div className="absolute top-20 left-20 w-96 h-96 bg-white/20 rounded-full mix-blend-soft-light filter blur-3xl animate-float" />
