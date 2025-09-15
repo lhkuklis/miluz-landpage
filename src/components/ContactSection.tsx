@@ -238,10 +238,10 @@ const ContactSection = () => {
 
                 {/* Additional CTA */}
                 <div className="mt-6 sm:mt-8 p-4 sm:p-6 bg-gradient-to-r from-[#00e6c3] to-[#0072B1] rounded-lg text-white transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer">
-                  <h4 className="font-bold text-base sm:text-lg mb-2">
-                    <HighlightedText>{t('contact.quick_response')}</HighlightedText>
+                  <h4 className="font-bold text-base sm:text-lg mb-2 text-white">
+                    {t('contact.quick_response')}
                   </h4>
-                  <p className="text-xs sm:text-sm opacity-90">
+                  <p className="text-xs sm:text-sm opacity-90 text-white">
                     {t('contact.quick_response_desc')}
                   </p>
                 </div>
