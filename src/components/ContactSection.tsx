@@ -28,16 +28,36 @@ const ContactSection = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Montar mensagem para WhatsApp
-    const msg =
-      `Nome: ${formData.name}\n` +
-      `Email: ${formData.email}\n` +
-      `Telefone: ${formData.phone}\n` +
-      `Empresa: ${formData.company}\n` +
-      `Mensagem: ${formData.message}`;
-    const url = `https://wa.me/5511969114510?text=${encodeURIComponent(msg)}`;
-    window.open(url, '_blank');
-    setFormData({ name: '', email: '', phone: '', company: '', message: '' });
+    setIsSubmitting(true);
+    
+    try {
+      // Montar mensagem para WhatsApp
+      const msg =
+        `Nome: ${formData.name}\n` +
+        `Email: ${formData.email}\n` +
+        `Telefone: ${formData.phone}\n` +
+        `Empresa: ${formData.company}\n` +
+        `Mensagem: ${formData.message}`;
+      const url = `https://wa.me/5511969114510?text=${encodeURIComponent(msg)}`;
+      window.open(url, '_blank');
+      
+      // Reset form after successful submission
+      setFormData({ name: '', email: '', phone: '', company: '', message: 'Hello, I would like to know more about Miluz services. Please contact me.' });
+      
+      // Show success message
+      toast({
+        title: "Message sent!",
+        description: "We'll contact you soon via WhatsApp.",
+      });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "There was an error sending your message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -76,7 +96,7 @@ const ContactSection = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start lg:items-center">
             {/* Contact Form */}
             <div className="animate-fade-in flex flex-col justify-center h-full" style={{ animationDelay: '0.2s' }}>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6" role="form" aria-label="Contact form">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-[#39175d] mb-2">
                     Full Name <span className="text-red-500">*</span>
@@ -90,6 +110,7 @@ const ContactSection = () => {
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-[#00e6c3]/40 rounded-lg focus:ring-2 focus:ring-[#00e6c3] focus:border-transparent bg-white text-[#39175d] placeholder-[#39175d]/40"
                     placeholder="e.g. John Doe"
+                    aria-describedby="name-error"
                     onInvalid={e => e.currentTarget.setCustomValidity('Please fill out this field.')}
                     onInput={e => e.currentTarget.setCustomValidity('')}
                   />
