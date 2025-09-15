@@ -1,6 +1,7 @@
 import React from "react";
 import { useLanguage } from '@/contexts/LanguageContext';
 import { CheckCircle, ArrowRight } from 'lucide-react';
+import HighlightedText from './HighlightedText';
 
 const WhyChooseSection = () => {
   const { t } = useLanguage();
@@ -15,10 +16,10 @@ const WhyChooseSection = () => {
             <div className="space-y-8">
               <div>
                 <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#39175d] mb-6 tracking-tight leading-tight">
-                  {t('home.whychoose.title')}
+                  <HighlightedText>{t('home.whychoose.title')}</HighlightedText>
                 </h2>
                 <p className="text-xl sm:text-2xl text-[#39175d]/70 leading-relaxed font-light">
-                  {t('home.whychoose.desc')}
+                  <HighlightedText>{t('home.whychoose.desc')}</HighlightedText>
                 </p>
               </div>
               

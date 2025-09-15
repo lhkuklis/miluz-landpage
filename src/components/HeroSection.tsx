@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight, Play, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
+import HighlightedText from './HighlightedText';
 
 const HeroSection = () => {
   const { t } = useLanguage();
@@ -46,12 +47,12 @@ const HeroSection = () => {
 
           {/* Main Title */}
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-black mb-8 tracking-tight leading-[0.9] text-white drop-shadow-2xl">
-            Your Strategic <span className="text-[#00e6c3]">IT</span> Talent Partner
+            <HighlightedText>Your Strategic IT Talent Partner</HighlightedText>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl sm:text-2xl md:text-3xl mb-12 text-white/90 max-w-3xl mx-auto leading-relaxed animate-fade-in font-light" style={{ animationDelay: '0.2s' }}>
-            {t('hero.subtitle')}
+            <HighlightedText>{t('hero.subtitle')}</HighlightedText>
           </p>
 
           {/* CTA Buttons */}

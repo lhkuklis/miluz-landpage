@@ -1,6 +1,7 @@
 import React from "react";
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Rocket, Globe, Users } from 'lucide-react';
+import HighlightedText from './HighlightedText';
 
 const TechTalentSolutionsSection = () => {
   const { t } = useLanguage();
@@ -9,15 +10,15 @@ const TechTalentSolutionsSection = () => {
       <div className="container mx-auto px-6 sm:px-4">
         <div className="max-w-4xl mx-auto mb-16">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#39175d] mb-6 tracking-tight">
-            {t('home.techTalent.title')}
+            <HighlightedText>{t('home.techTalent.title')}</HighlightedText>
           </h2>
           <p className="text-xl sm:text-2xl text-[#39175d]/70 leading-relaxed font-light">
-            {t('home.techTalent.desc')}
+            <HighlightedText>{t('home.techTalent.desc')}</HighlightedText>
           </p>
         </div>
 
         <h3 className="text-3xl sm:text-4xl font-bold text-[#0072B1] mb-16 animate-fade-in">
-          {t('home.techTalent.differentials.title')}
+          <HighlightedText>{t('home.techTalent.differentials.title')}</HighlightedText>
         </h3>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">

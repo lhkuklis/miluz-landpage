@@ -1,6 +1,7 @@
 import React from 'react';
 import { Quote, Star } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import HighlightedText from './HighlightedText';
 
 const TestimonialsSection = () => {
   const { t } = useLanguage();
@@ -30,7 +31,7 @@ const TestimonialsSection = () => {
           {/* Header */}
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#39175d] mb-4 animate-fade-in">
-              {t('testimonials.title')}
+              <HighlightedText>{t('testimonials.title')}</HighlightedText>
             </h2>
           </div>
 

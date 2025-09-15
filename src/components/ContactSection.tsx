@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { toast } from '@/hooks/use-toast';
+import HighlightedText from './HighlightedText';
 
 const ContactSection = () => {
   const { t } = useLanguage();
@@ -68,7 +69,7 @@ const ContactSection = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#39175d] mb-4 animate-fade-in">
-              {t('contact.title')}
+              <HighlightedText>{t('contact.title')}</HighlightedText>
             </h2>
           </div>
 
@@ -190,7 +191,7 @@ const ContactSection = () => {
             <div className="animate-slide-in-right flex flex-col justify-center h-full" style={{ animationDelay: '0.3s' }}>
               <div className="bg-white rounded-2xl p-6 sm:p-8 border-2 border-[#00e6c3]/20 shadow-lg">
                 <h3 className="text-2xl font-bold text-[#39175d] mb-6">
-                  {t('contact.info.title')}
+                  <HighlightedText>{t('contact.info.title')}</HighlightedText>
                 </h3>
 
                 <div className="space-y-4 sm:space-y-6">
@@ -217,10 +218,10 @@ const ContactSection = () => {
                 {/* Additional CTA */}
                 <div className="mt-6 sm:mt-8 p-4 sm:p-6 bg-gradient-to-r from-[#00e6c3] to-[#0072B1] rounded-lg text-white transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer">
                   <h4 className="font-bold text-base sm:text-lg mb-2">
-                    {t('contact.quick_response')}
+                    <HighlightedText>{t('contact.quick_response')}</HighlightedText>
                   </h4>
                   <p className="text-xs sm:text-sm opacity-90">
-                    {t('contact.quick_response_desc')}
+                    <HighlightedText>{t('contact.quick_response_desc')}</HighlightedText>
                   </p>
                 </div>
               </div>

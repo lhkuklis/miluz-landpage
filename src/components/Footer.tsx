@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start gap-6 mb-8 md:mb-0">
             <div className="flex items-center justify-center md:justify-start space-x-2 mb-2">
               <img 
-                src="/lovable-uploads/dadb21c8-40b7-4cf5-a854-54badb74da29.png" 
+             src="/images/logo.png" 
                 alt="Miluz Logo" 
                 className="h-10 w-auto mx-auto md:mx-0"
               />

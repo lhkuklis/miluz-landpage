@@ -1,6 +1,7 @@
 import React from "react";
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Target, Search, ShieldCheck } from 'lucide-react';
+import HighlightedText from './HighlightedText';
 
 const ProcessSection = () => {
   const { t } = useLanguage();
@@ -28,10 +29,10 @@ const ProcessSection = () => {
     <section id="process" className="py-20 bg-[#f8fafc] text-center">
       <div className="container mx-auto px-6 sm:px-4">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#39175d] mb-3 sm:mb-4">
-          {t('home.process.title')}
+          <HighlightedText>{t('home.process.title')}</HighlightedText>
         </h2>
         <p className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-[#39175d]/80 mb-8 sm:mb-16 px-4">
-          {t('home.process.desc')}
+          <HighlightedText>{t('home.process.desc')}</HighlightedText>
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-12 max-w-5xl mx-auto">
           {steps.map((step, i) => (
