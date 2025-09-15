@@ -18,7 +18,8 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     target: "esnext",
-    minify: "terser",
+    // use default esbuild minifier to avoid optional terser dependency in CI
+    minify: true,
     sourcemap: mode === "development",
     rollupOptions: {
       output: {
