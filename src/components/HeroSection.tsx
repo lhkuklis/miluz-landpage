@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight, Play, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
+import HighlightedText from './HighlightedText';
 
 const HeroSection = () => {
   const { t } = useLanguage();
