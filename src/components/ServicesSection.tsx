@@ -15,7 +15,7 @@ const ServicesSection = () => {
           <span>
             <HighlightedText>Continuous recruitment</HighlightedText> for tech positions with a fixed monthly fee. Ideal for companies with ongoing hiring needs and demand for agility and predictability.
           </span>
-          <ul className="mt-4 list-disc pl-5 text-[#39175d] text-sm">
+          <ul className="mt-4 list-disc list-inside text-[#39175d] text-sm">
             <li><HighlightedText>Unlimited positions</HighlightedText> per month</li>
             <li><HighlightedText>Priority service</HighlightedText> and dedicated recruiter</li>
             <li><HighlightedText>Predictable cost</HighlightedText> for your HR budget</li>
@@ -33,7 +33,7 @@ const ServicesSection = () => {
           <span>
             <HighlightedText>Single position recruitment</HighlightedText> for specific tech vacancies. Pay only when you need to fill a position, with the same quality and expertise.
           </span>
-          <ul className="mt-4 list-disc pl-5 text-[#39175d] text-sm">
+          <ul className="mt-4 list-disc list-inside text-[#39175d] text-sm">
             <li><HighlightedText>Pay per hire</HighlightedText></li>
             <li><HighlightedText>Specialized tech recruiters</HighlightedText></li>
             <li><HighlightedText>Quality guarantee</HighlightedText> for each hire</li>
