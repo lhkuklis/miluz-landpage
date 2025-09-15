@@ -52,7 +52,7 @@ const ServicesSection = () => {
           {/* Header */}
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="heading-2 mb-4 animate-fade-in">
-              <HighlightedText>{t('services.title')}</HighlightedText>
+              {t('services.title')}
             </h2>
           </div>
 
