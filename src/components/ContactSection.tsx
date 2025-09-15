@@ -69,7 +69,7 @@ const ContactSection = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#39175d] mb-4 animate-fade-in">
-              <HighlightedText>{t('contact.title')}</HighlightedText>
+              {t('contact.title')}
             </h2>
           </div>
 
@@ -191,7 +191,7 @@ const ContactSection = () => {
             <div className="animate-slide-in-right flex flex-col justify-center h-full" style={{ animationDelay: '0.3s' }}>
               <div className="bg-white rounded-2xl p-6 sm:p-8 border-2 border-[#00e6c3]/20 shadow-lg">
                 <h3 className="text-2xl font-bold text-[#39175d] mb-6">
-                  <HighlightedText>{t('contact.info.title')}</HighlightedText>
+                  {t('contact.info.title')}
                 </h3>
 
                 <div className="space-y-4 sm:space-y-6">
@@ -221,7 +221,7 @@ const ContactSection = () => {
                     <HighlightedText>{t('contact.quick_response')}</HighlightedText>
                   </h4>
                   <p className="text-xs sm:text-sm opacity-90">
-                    <HighlightedText>{t('contact.quick_response_desc')}</HighlightedText>
+                    {t('contact.quick_response_desc')}
                   </p>
                 </div>
               </div>

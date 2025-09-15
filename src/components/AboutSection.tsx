@@ -31,7 +31,7 @@ const AboutSection = () => {
           {/* Header */}
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#39175d] mb-4 animate-fade-in">
-              <HighlightedText>{t('about.title')}</HighlightedText>
+              {t('about.title')}
             </h2>
           </div>
 
@@ -39,11 +39,11 @@ const AboutSection = () => {
             {/* Content */}
             <div className="space-y-4 sm:space-y-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <p className="text-base sm:text-lg text-[#39175d]/80 leading-relaxed">
-                <HighlightedText>{t('about.description')}</HighlightedText>
+                {t('about.description')}
               </p>
               
               <p className="text-base sm:text-lg text-[#39175d]/80 leading-relaxed">
-                <HighlightedText>{t('about.mission')}</HighlightedText>
+                {t('about.mission')}
               </p>
 
               {/* Features */}

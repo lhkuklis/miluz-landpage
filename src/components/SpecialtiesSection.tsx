@@ -53,10 +53,10 @@ const SpecialtiesSection = () => {
   return (
     <section id="specialties" className="py-20 bg-white text-center">
       <h2 className="text-4xl md:text-5xl font-extrabold text-[#39175d] mb-4">
-  <HighlightedText>{t('home.specialties.title')}</HighlightedText>
+        {t('home.specialties.title')}
       </h2>
       <p className="max-w-3xl mx-auto text-lg md:text-xl text-[#39175d]/80 mb-12">
-  <HighlightedText>{t('home.specialties.desc')}</HighlightedText>
+        {t('home.specialties.desc')}
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
         {specialties.map((spec, i) => (

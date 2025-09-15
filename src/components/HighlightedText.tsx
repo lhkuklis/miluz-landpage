@@ -5,9 +5,10 @@ interface HighlightedTextProps {
   className?: string;
 }
 
+// Subtle highlight: teal color + semi-bold. Avoid gradients or full-text color fills.
 const HighlightedText: React.FC<HighlightedTextProps> = ({ children, className = '' }) => {
   return (
-    <span className={`bg-gradient-to-r from-[#00e6c3] to-[#39175d] bg-clip-text text-transparent font-extrabold ${className}`}>{children}</span>
+    <span className={`text-[#00c4a7] font-semibold ${className}`}>{children}</span>
   );
 };
 
