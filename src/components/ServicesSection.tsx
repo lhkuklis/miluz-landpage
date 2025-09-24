@@ -31,7 +31,7 @@ const ServicesSection = () => {
       description: (
         <>
           <span>
-            <HighlightedText>Single position recruitment</HighlightedText> for specific tech vacancies. Pay only when you need to fill a position, with the same quality and expertise.
+            <HighlightedText>Single position recruitment</HighlightedText> for specific tech roles. Pay only when you need to fill a position, with the same quality and expertise.
           </span>
           <ul className="mt-4 list-disc list-inside text-[#39175d] text-sm">
             <li><HighlightedText>Pay per hire</HighlightedText></li>
