@@ -1,5 +1,6 @@
 import React from 'react';
 import { Search, UserCheck, Lightbulb, Crown } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import HighlightedText from './HighlightedText';
 
@@ -88,6 +89,14 @@ const ServicesSection = () => {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="mt-12 rounded-[2rem] border border-slate-200 bg-slate-950 p-8 text-center text-white shadow-2xl shadow-slate-900/10">
+          <h3 className="text-2xl sm:text-3xl font-semibold mb-3">Precisa de uma solução para o seu próximo processo de contratação?</h3>
+          <p className="mx-auto max-w-2xl text-base text-slate-300 mb-6">Fale com nosso time e receba orientação consultiva para escolher o formato que entrega melhor resultado para a sua empresa.</p>
+          <Button className="inline-flex items-center justify-center rounded-full bg-[#00e6c3] px-8 py-4 text-base font-semibold text-slate-950 transition hover:bg-[#00c6a2]">
+            {t('services.cta')}
+          </Button>
         </div>
       </div>
     </section>

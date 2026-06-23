@@ -1,46 +1,46 @@
 import React from "react";
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Code, Database, Cloud, Smartphone, Briefcase, Shield } from 'lucide-react';
+import { Briefcase, Megaphone, Truck, TrendingUp, Users, Code } from 'lucide-react';
 import HighlightedText from './HighlightedText';
 
 const specialties = [
   {
-    icon: <Code className="w-10 h-10 text-[#00e6c3]" />, // Development
+    icon: <Briefcase className="w-10 h-10 text-[#00e6c3]" />,
     titleKey: 'home.specialties.1.title',
     descKey: 'home.specialties.1.desc',
     tagsKey: 'home.specialties.1.tags',
     hover: 'hover:border-[#00e6c3] hover:shadow-[#00e6c3]/30',
   },
   {
-    icon: <Database className="w-10 h-10 text-[#0072B1]" />, // Data & Analytics
+    icon: <Megaphone className="w-10 h-10 text-[#0072B1]" />,
     titleKey: 'home.specialties.2.title',
     descKey: 'home.specialties.2.desc',
     tagsKey: 'home.specialties.2.tags',
     hover: 'hover:border-[#0072B1] hover:shadow-[#0072B1]/30',
   },
   {
-    icon: <Cloud className="w-10 h-10 text-[#39175d]" />, // Cloud & Infrastructure
+    icon: <Truck className="w-10 h-10 text-[#39175d]" />,
     titleKey: 'home.specialties.3.title',
     descKey: 'home.specialties.3.desc',
     tagsKey: 'home.specialties.3.tags',
     hover: 'hover:border-[#39175d] hover:shadow-[#39175d]/30',
   },
   {
-    icon: <Smartphone className="w-10 h-10 text-[#00e6c3]" />, // Mobile Development
+    icon: <TrendingUp className="w-10 h-10 text-[#00e6c3]" />,
     titleKey: 'home.specialties.4.title',
     descKey: 'home.specialties.4.desc',
     tagsKey: 'home.specialties.4.tags',
     hover: 'hover:border-[#00e6c3] hover:shadow-[#00e6c3]/30',
   },
   {
-    icon: <Briefcase className="w-10 h-10 text-[#0072B1]" />, // IT Management
+    icon: <Users className="w-10 h-10 text-[#0072B1]" />,
     titleKey: 'home.specialties.5.title',
     descKey: 'home.specialties.5.desc',
     tagsKey: 'home.specialties.5.tags',
     hover: 'hover:border-[#0072B1] hover:shadow-[#0072B1]/30',
   },
   {
-    icon: <Shield className="w-10 h-10 text-[#39175d]" />, // Cybersecurity
+    icon: <Code className="w-10 h-10 text-[#39175d]" />,
     titleKey: 'home.specialties.6.title',
     descKey: 'home.specialties.6.desc',
     tagsKey: 'home.specialties.6.tags',

@@ -33,6 +33,9 @@ const TestimonialsSection = () => {
             <h2 className="heading-2 mb-4 animate-fade-in">
               {t('testimonials.title')}
             </h2>
+            <p className="mx-auto max-w-2xl text-base text-slate-600 leading-relaxed">
+              {t('testimonials.subtitle')}
+            </p>
           </div>
 
           {/* Testimonials Grid */}

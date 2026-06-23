@@ -14,7 +14,7 @@ const ContactSection = () => {
     email: '',
     phone: '',
     company: '',
-    message: 'Olá, gostaria de saber mais sobre os serviços da Miluz. Por favor, entre em contato.'
+    message: t('contact.message.default')
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -88,6 +88,9 @@ const ContactSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
+            <p className="text-sm uppercase tracking-[0.35em] text-slate-500 mb-3">
+              {t('contact.subtitle')}
+            </p>
             <h2 className="heading-2 mb-4 animate-fade-in">
               {t('contact.title')}
             </h2>

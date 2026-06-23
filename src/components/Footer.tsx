@@ -15,6 +15,28 @@ const Footer = () => {
   return (
     <footer className="bg-white text-[#39175d] border-t border-[#00e6c3]/20">
       <div className="container mx-auto px-4 py-12">
+        <div className="mb-12 rounded-[2rem] border border-[#00e6c3]/15 bg-[#0f172a] p-8 text-white shadow-2xl shadow-slate-900/10">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+            <div className="max-w-2xl">
+              <p className="text-sm uppercase tracking-[0.35em] text-[#94f4e2] mb-3">
+                {t('footer.cta.label')}
+              </p>
+              <h2 className="text-3xl sm:text-4xl font-semibold leading-tight">
+                {t('footer.cta.title')}
+              </h2>
+              <p className="mt-3 text-slate-300 max-w-2xl">
+                {t('footer.cta.description')}
+              </p>
+            </div>
+            <a
+              href="#contact"
+              className="inline-flex items-center justify-center rounded-full bg-[#00e6c3] px-8 py-4 text-base font-semibold text-slate-950 transition hover:bg-[#00c6a2]"
+            >
+              {t('footer.cta.button')}
+            </a>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start md:items-start text-center md:text-left">
           {/* Logo and Description */}
           <div className="flex flex-col items-center md:items-start gap-6 mb-8 md:mb-0">
@@ -151,8 +173,11 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-[#00e6c3]/20 mt-12 pt-8 text-center">
+          <p className="text-[#39175d]/80 mb-2">
+            {t('footer.description')}
+          </p>
           <p className="text-[#39175d]/80">
-            © 2025 Miluz. {t('footer.copyright').replace('© 2024 Miluz. ', '')}
+            © 2025 Miluz. {t('footer.copyright')}
           </p>
         </div>
       </div>

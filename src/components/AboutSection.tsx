@@ -64,6 +64,14 @@ const AboutSection = () => {
                   </div>
                 ))}
               </div>
+
+              <div className="mt-10 rounded-3xl border border-[#00e6c3]/20 bg-[#f8fafc] p-6 sm:p-8 shadow-lg">
+                <p className="text-lg sm:text-xl font-semibold text-slate-950 mb-3">Acelere contratações sem exigir mais do seu time de RH.</p>
+                <p className="text-slate-600 leading-7 mb-6">Conte com avaliação de perfil, triagem qualificada e shortlist pronto para entrevista.</p>
+                <a href="#contact" className="inline-flex items-center justify-center rounded-full bg-[#00e6c3] px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-[#00c6a2]">
+                  {t('about.cta')}
+                </a>
+              </div>
             </div>
 
             {/* Stats */}
