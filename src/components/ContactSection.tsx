@@ -14,7 +14,7 @@ const ContactSection = () => {
     email: '',
     phone: '',
     company: '',
-    message: 'Hello, I would like to know more about Miluz services. Please contact me.'
+    message: 'Olá, gostaria de saber mais sobre os serviços da Miluz. Por favor, entre em contato.'
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -42,17 +42,17 @@ const ContactSection = () => {
       window.open(url, '_blank');
       
       // Reset form after successful submission
-      setFormData({ name: '', email: '', phone: '', company: '', message: 'Hello, I would like to know more about Miluz services. Please contact me.' });
+      setFormData({ name: '', email: '', phone: '', company: '', message: 'Olá, gostaria de saber mais sobre os serviços da Miluz. Por favor, entre em contato.' });
       
       // Show success message
       toast({
-        title: "Message sent!",
-        description: "We'll contact you soon via WhatsApp.",
+        title: t('contact.success.title'),
+        description: t('contact.success.description'),
       });
     } catch (error) {
       toast({
-        title: "Error",
-        description: "There was an error sending your message. Please try again.",
+        title: t('contact.error.title'),
+        description: t('contact.error.description'),
         variant: "destructive",
       });
     } finally {
@@ -96,10 +96,10 @@ const ContactSection = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start lg:items-center">
             {/* Contact Form */}
             <div className="animate-fade-in flex flex-col justify-center h-full" style={{ animationDelay: '0.2s' }}>
-              <form onSubmit={handleSubmit} className="space-y-6" role="form" aria-label="Contact form">
+              <form onSubmit={handleSubmit} className="space-y-6" role="form" aria-label="Formulário de contato">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-[#39175d] mb-2">
-                    Full Name <span className="text-red-500">*</span>
+                    {t('contact.form.name')} <span className="text-red-500">*</span>
                   </label>
                   <Input
                     id="name"
@@ -109,16 +109,16 @@ const ContactSection = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-[#00e6c3]/40 rounded-lg focus:ring-2 focus:ring-[#00e6c3] focus:border-transparent bg-white text-[#39175d] placeholder-[#39175d]/40"
-                    placeholder="e.g. John Doe"
+                    placeholder={t('contact.placeholder.name')}
                     aria-describedby="name-error"
-                    onInvalid={e => e.currentTarget.setCustomValidity('Please fill out this field.')}
+                    onInvalid={e => e.currentTarget.setCustomValidity(t('contact.validation.required'))}
                     onInput={e => e.currentTarget.setCustomValidity('')}
                   />
                 </div>
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-[#39175d] mb-2">
-                    Email <span className="text-red-500">*</span>
+                    {t('contact.form.email')} <span className="text-red-500">*</span>
                   </label>
                   <Input
                     id="email"
@@ -128,15 +128,15 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-[#00e6c3]/40 rounded-lg focus:ring-2 focus:ring-[#00e6c3] focus:border-transparent bg-white text-[#39175d] placeholder-[#39175d]/40"
-                    placeholder="e.g. john@email.com"
-                    onInvalid={e => e.currentTarget.setCustomValidity('Please fill out this field.')}
+                    placeholder={t('contact.placeholder.email')}
+                    onInvalid={e => e.currentTarget.setCustomValidity(t('contact.validation.required'))}
                     onInput={e => e.currentTarget.setCustomValidity('')}
                   />
                 </div>
 
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-[#39175d] mb-2">
-                    Phone Number <span className="text-red-500">*</span>
+                    {t('contact.form.phone')} <span className="text-red-500">*</span>
                   </label>
                   <Input
                     id="phone"
@@ -146,15 +146,15 @@ const ContactSection = () => {
                     value={formData.phone}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-[#00e6c3]/40 rounded-lg focus:ring-2 focus:ring-[#00e6c3] focus:border-transparent bg-white text-[#39175d] placeholder-[#39175d]/40"
-                    placeholder="e.g. +1 234 567 8901"
-                    onInvalid={e => e.currentTarget.setCustomValidity('Please fill out this field.')}
+                    placeholder={t('contact.placeholder.phone')}
+                    onInvalid={e => e.currentTarget.setCustomValidity(t('contact.validation.required'))}
                     onInput={e => e.currentTarget.setCustomValidity('')}
                   />
                 </div>
 
                 <div>
                   <label htmlFor="company" className="block text-sm font-medium text-[#39175d] mb-2">
-                    Company <span className="text-red-500">*</span>
+                    {t('contact.form.company')} <span className="text-red-500">*</span>
                   </label>
                   <Input
                     id="company"
@@ -164,15 +164,15 @@ const ContactSection = () => {
                     value={formData.company}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-[#00e6c3]/40 rounded-lg focus:ring-2 focus:ring-[#00e6c3] focus:border-transparent bg-white text-[#39175d] placeholder-[#39175d]/40"
-                    placeholder={t('contact.form.company')}
-                    onInvalid={e => e.currentTarget.setCustomValidity('Please fill out this field.')}
+                    placeholder={t('contact.placeholder.company')}
+                    onInvalid={e => e.currentTarget.setCustomValidity(t('contact.validation.required'))}
                     onInput={e => e.currentTarget.setCustomValidity('')}
                   />
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-[#39175d] mb-2">
-                    Message <span className="text-red-500">*</span>
+                    {t('contact.form.message')} <span className="text-red-500">*</span>
                   </label>
                   <Textarea
                     id="message"
@@ -182,8 +182,8 @@ const ContactSection = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-[#00e6c3]/40 rounded-lg focus:ring-2 focus:ring-[#00e6c3] focus:border-transparent bg-white text-[#39175d] placeholder-[#39175d]/40"
-                    placeholder={t('contact.form.message')}
-                    onInvalid={e => e.currentTarget.setCustomValidity('Please fill out this field.')}
+                    placeholder={t('contact.placeholder.message')}
+                    onInvalid={e => e.currentTarget.setCustomValidity(t('contact.validation.required'))}
                     onInput={e => e.currentTarget.setCustomValidity('')}
                   />
                 </div>

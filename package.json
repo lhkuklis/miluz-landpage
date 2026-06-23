@@ -3,13 +3,15 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Miluz - Your Strategic IT Talent Partner - Landing Page",
+  "description": "Miluz - Sua parceira estratégica em Recrutamento e Seleção - Landing Page",
   "keywords": [
-    "recruitment",
-    "tech talent",
-    "IT",
-    "hiring",
-    "consulting"
+    "recrutamento",
+    "seleção",
+    "talentos",
+    "recrutamento generalista",
+    "consultoria de RH",
+    "contratação",
+    "profissionais qualificados"
   ],
   "author": "Miluz",
   "scripts": {

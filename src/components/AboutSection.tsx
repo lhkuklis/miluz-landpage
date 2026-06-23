@@ -49,9 +49,9 @@ const AboutSection = () => {
               {/* Features */}
               <div className="grid grid-cols-1 gap-3 sm:gap-4 mt-6 sm:mt-8">
                 {[
-                  { icon: Target, title: 'Precise Matching', desc: 'Focus on technical and cultural compatibility', color: '#00e6c3' },
-                  { icon: Users, title: 'Qualified Network', desc: 'Solid base of specialized professionals', color: '#0072B1' },
-                  { icon: Award, title: 'Excellence', desc: 'Optimized processes and guaranteed results', color: '#39175d' }
+                  { icon: Target, title: t('about.feature.matching.title'), desc: t('about.feature.matching.desc'), color: '#00e6c3' },
+                  { icon: Users, title: t('about.feature.network.title'), desc: t('about.feature.network.desc'), color: '#0072B1' },
+                  { icon: Award, title: t('about.feature.excellence.title'), desc: t('about.feature.excellence.desc'), color: '#39175d' }
                 ].map((feature, index) => (
                   <div key={index} className="flex items-start space-x-3 sm:space-x-4 p-3 sm:p-4 bg-white rounded-lg shadow-sm group hover:shadow-lg transition-all duration-300 cursor-pointer border-2 border-transparent hover:border-[#00e6c3]">
                     <div className="p-2 rounded-lg transition-transform duration-300 group-hover:scale-110" style={{ background: feature.color + '10' }}>

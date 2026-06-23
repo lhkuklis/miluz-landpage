@@ -1,12 +1,12 @@
-# Miluz - Tech Talent Solutions
+# Miluz - Recrutamento e Seleção
 
-![Miluz Logo](https://img.shields.io/badge/Miluz-Tech%20Talent%20Solutions-39175d?style=for-the-badge&logo=react)
+![Miluz Logo](https://img.shields.io/badge/Miluz-Recrutamento%20e%20Sele%C3%A7%C3%A3o-39175d?style=for-the-badge&logo=react)
 
-Uma landing page moderna e responsiva para a Miluz, empresa especializada em soluções de recrutamento e seleção de talentos de tecnologia.
+Uma landing page moderna e responsiva para a Miluz, empresa especializada em soluções de recrutamento e seleção generalista para diferentes áreas do mercado.
 
 ## 🚀 Sobre o Projeto
 
-A Miluz é uma empresa focada em conectar empresas com profissionais de tecnologia altamente qualificados. Nossa landing page apresenta nossos serviços, diferenciais e facilita o contato direto com nossa equipe.
+A Miluz é uma empresa focada em conectar empresas com profissionais qualificados. Nossa landing page apresenta nossos serviços, diferenciais e facilita o contato direto com nossa equipe.
 
 ### ✨ Funcionalidades
 
@@ -70,38 +70,38 @@ npm run type-check   # Verifica tipos TypeScript
 
 ## 📱 Seções da Landing Page
 
-### 🏠 Hero Section
-- Título principal com destaque para "IT Talent"
-- Botões de call-to-action (Contact Us / Learn More)
+### 🏠 Seção Hero
+- Título principal com destaque para "Recrutamento e Seleção"
+- Botões de call-to-action (Fale conosco / Saiba mais)
 - Animações de fundo e elementos flutuantes
 
-### 🎯 Tech Talent Solutions
+### 🎯 Soluções de Talentos
 - Apresentação dos diferenciais da empresa
 - Cards com ícones e descrições
 - Efeitos hover interativos
 
-### 📊 About Section
+### 📊 Seção Sobre
 - Informações sobre a empresa
 - Estatísticas de sucesso
 - Lista de benefícios
 
-### 🔧 Services Section
+### 🔧 Seção de Serviços
 - Recrutamento e Seleção
-- Consultoria em TI
-- Headhunting especializado
+- Consultoria de RH
+- Headhunting
 - Processos otimizados
 
-### 💬 Testimonials
+### 💬 Depoimentos
 - Depoimentos de clientes
 - Sistema de avaliação por estrelas
 - Cards com efeitos visuais
 
-### 🤝 Why Choose Us
+### 🤝 Por que escolher
 - Benefícios para empresas
 - Benefícios para profissionais
 - Processo de trabalho
 
-### 📞 Contact Section
+### 📞 Seção de Contato
 - Formulário de contato completo
 - Integração com WhatsApp
 - Informações de contato

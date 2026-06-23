@@ -42,12 +42,12 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 mb-8 animate-scale-in">
             <Sparkles className="w-4 h-4 text-[#00e6c3]" />
-            <span className="text-sm font-medium text-white/90">Leading Innovation in Tech Talents</span>
+            <span className="text-sm font-medium text-white/90">{t('hero.badge')}</span>
           </div>
 
           {/* Main Title */}
           <h1 className="heading-1 mb-8 leading-[0.9] text-white drop-shadow-2xl">
-            Your Strategic <HighlightedText className="font-bold">IT</HighlightedText> Talent Partner
+            {t('hero.title')}
           </h1>
 
           {/* Subtitle */}

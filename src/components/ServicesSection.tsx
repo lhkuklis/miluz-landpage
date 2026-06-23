@@ -9,17 +9,17 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Search,
-  title: <HighlightedText className="text-[#39175d]">Monthly Subscription</HighlightedText>,
+      title: <HighlightedText className="text-[#39175d]">Assinatura Mensal</HighlightedText>,
       description: (
         <>
           <span>
-            <HighlightedText>Continuous recruitment</HighlightedText> for tech positions with a fixed monthly fee. Ideal for companies with ongoing hiring needs and demand for agility and predictability.
+            <HighlightedText>Recrutamento contínuo</HighlightedText> para vagas recorrentes, com taxa fixa mensal. Ideal para empresas que precisam de previsibilidade e agilidade.
           </span>
           <ul className="mt-4 list-disc list-inside text-[#39175d] text-sm">
-            <li><HighlightedText>Unlimited positions</HighlightedText> per month</li>
-            <li><HighlightedText>Priority service</HighlightedText> and dedicated recruiter</li>
-            <li><HighlightedText>Predictable cost</HighlightedText> for your HR budget</li>
-            <li><HighlightedText>Agile and assertive hiring</HighlightedText></li>
+            <li><HighlightedText>Vagas ilimitadas</HighlightedText> por mês</li>
+            <li><HighlightedText>Atendimento prioritário</HighlightedText> e recrutador dedicado</li>
+            <li><HighlightedText>Custo previsível</HighlightedText> para o seu RH</li>
+            <li><HighlightedText>Contratações ágeis</HighlightedText></li>
           </ul>
         </>
       ),
@@ -27,17 +27,17 @@ const ServicesSection = () => {
     },
     {
       icon: UserCheck,
-  title: <HighlightedText className="text-[#39175d]">On-Demand Recruitment</HighlightedText>,
+      title: <HighlightedText className="text-[#39175d]">Recrutamento Sob Demanda</HighlightedText>,
       description: (
         <>
           <span>
-            <HighlightedText>Single position recruitment</HighlightedText> for specific tech roles. Pay only when you need to fill a position, with the same quality and expertise.
+            <HighlightedText>Recrutamento por vaga</HighlightedText> para posições específicas. Pague apenas quando precisar preencher uma vaga, com qualidade e agilidade.
           </span>
           <ul className="mt-4 list-disc list-inside text-[#39175d] text-sm">
-            <li><HighlightedText>Pay per hire</HighlightedText></li>
-            <li><HighlightedText>Specialized tech recruiters</HighlightedText></li>
-            <li><HighlightedText>Quality guarantee</HighlightedText> for each hire</li>
-            <li><HighlightedText>Full process support</HighlightedText></li>
+            <li><HighlightedText>Pagamento por contratação</HighlightedText></li>
+            <li><HighlightedText>Recrutadores especializados</HighlightedText></li>
+            <li><HighlightedText>Garantia de qualidade</HighlightedText> em cada processo</li>
+            <li><HighlightedText>Apoio completo</HighlightedText> em todas as etapas</li>
           </ul>
         </>
       ),

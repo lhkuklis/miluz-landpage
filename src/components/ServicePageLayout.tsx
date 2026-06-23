@@ -144,10 +144,10 @@ const ServicePageLayout: React.FC<ServicePageLayoutProps> = ({
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Ready to get started?
+              Pronto para começar?
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Entre em contato e descubra como podemos ajudar sua empresa.
+              Entre em contato e descubra como podemos impulsionar suas contratações.
             </p>
             <button
               onClick={scrollToContact}

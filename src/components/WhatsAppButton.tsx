@@ -13,7 +13,7 @@ const WhatsAppButton = () => {
       {/* Tooltip */}
       {showTooltip && (
         <div className="bg-miluz-purple text-white px-4 py-2 rounded-lg shadow-lg text-sm whitespace-nowrap animate-fade-in">
-          Contact us on WhatsApp!
+          Entre em contato pelo WhatsApp!
           <div className="absolute bottom-0 right-4 transform translate-y-1/2 rotate-45 w-2 h-2 bg-miluz-purple"></div>
         </div>
       )}
