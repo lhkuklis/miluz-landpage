@@ -8,7 +8,6 @@ import SpecialtiesSection from '@/components/SpecialtiesSection';
 import WhyChooseSection from '@/components/WhyChooseSection';
 import AboutSection from '@/components/AboutSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
-import ServicesSection from '@/components/ServicesSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
@@ -26,7 +25,6 @@ const Index = () => {
         <WhyChooseSection />
         <AboutSection />
         <TestimonialsSection />
-        <ServicesSection />
         <ContactSection />
         <Footer />
         <WhatsAppButton />

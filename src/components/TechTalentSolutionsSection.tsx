@@ -6,8 +6,8 @@ const TechTalentSolutionsSection = () => {
     <section id="techtalentsolutions" className="py-24 bg-slate-50">
       <div className="container mx-auto px-6 sm:px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <p className="text-sm uppercase tracking-[0.35em] text-slate-500 mb-4">Nossos diferenciais</p>
-          <h2 className="text-3xl sm:text-4xl font-semibold text-slate-950">Resultados mais rápidos com menos desgaste para sua equipe</h2>
+          <p className="text-sm uppercase tracking-[0.35em] text-slate-500 mb-4 font-sans">Nossos diferenciais</p>
+          <h2 className="text-3xl sm:text-4xl font-semibold text-slate-950 font-sans">Resultados mais rápidos com menos desgaste para sua equipe</h2>
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">

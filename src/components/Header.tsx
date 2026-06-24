@@ -48,7 +48,15 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <Link to="/">
+            <Link
+              to="/"
+              onClick={(event) => {
+                if (location.pathname === '/') {
+                  event.preventDefault();
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              }}
+            >
               <img 
              src="/images/logo.png" 
                 alt="Miluz Logo" 
@@ -58,63 +66,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8" role="navigation" aria-label="Navegação principal">
-            <button
-              onClick={() => scrollToSection('home')}
-              className="text-[#39175d] hover:text-[#00e6c3] transition-colors font-semibold text-sm tracking-wide focus:outline-none focus:ring-2 focus:ring-[#00e6c3] focus:ring-offset-2 rounded-md px-2 py-1"
-              aria-label="Navegar para a seção inicial"
-            >
-              {t('nav.home')}
-            </button>
-            <button 
-              onClick={() => scrollToSection('techtalentsolutions')} 
-              className="text-[#39175d] hover:text-[#00e6c3] transition-colors font-semibold text-sm tracking-wide focus:outline-none focus:ring-2 focus:ring-[#00e6c3] focus:ring-offset-2 rounded-md px-2 py-1"
-              aria-label="Navegar para a seção de soluções"
-            >
-              {t('nav.techTalentSolutions')}
-            </button>
-            <button 
-              onClick={() => scrollToSection('process')} 
-              className="text-[#39175d] hover:text-[#00e6c3] transition-colors font-semibold text-sm tracking-wide focus:outline-none focus:ring-2 focus:ring-[#00e6c3] focus:ring-offset-2 rounded-md px-2 py-1"
-              aria-label="Navegar para a seção de processo"
-            >
-              {t('nav.process')}
-            </button>
-            <button 
-              onClick={() => scrollToSection('specialties')} 
-              className="text-[#39175d] hover:text-[#00e6c3] transition-colors font-semibold text-sm tracking-wide focus:outline-none focus:ring-2 focus:ring-[#00e6c3] focus:ring-offset-2 rounded-md px-2 py-1"
-              aria-label="Navegar para a seção de especialidades"
-            >
-              {t('nav.specialties')}
-            </button>
-            <button 
-              onClick={() => scrollToSection('whychoose')} 
-              className="text-[#39175d] hover:text-[#00e6c3] transition-colors font-semibold text-sm tracking-wide focus:outline-none focus:ring-2 focus:ring-[#00e6c3] focus:ring-offset-2 rounded-md px-2 py-1"
-              aria-label="Navegar para a seção por que escolher"
-            >
-              {t('nav.whyChoose')}
-            </button>
-            <button 
-              onClick={() => scrollToSection('about')} 
-              className="text-[#39175d] hover:text-[#00e6c3] transition-colors font-semibold text-sm tracking-wide focus:outline-none focus:ring-2 focus:ring-[#00e6c3] focus:ring-offset-2 rounded-md px-2 py-1"
-              aria-label="Navegar para a seção sobre"
-            >
-              {t('nav.about')}
-            </button>
-            <button 
-              onClick={() => scrollToSection('testimonials')} 
-              className="text-[#39175d] hover:text-[#00e6c3] transition-colors font-semibold text-sm tracking-wide focus:outline-none focus:ring-2 focus:ring-[#00e6c3] focus:ring-offset-2 rounded-md px-2 py-1"
-              aria-label="Navegar para a seção de depoimentos"
-            >
-              {t('nav.testimonials')}
-            </button>
-            <button 
-              onClick={() => scrollToSection('services')} 
-              className="text-[#39175d] hover:text-[#00e6c3] transition-colors font-semibold text-sm tracking-wide focus:outline-none focus:ring-2 focus:ring-[#00e6c3] focus:ring-offset-2 rounded-md px-2 py-1"
-              aria-label="Navegar para a seção de serviços"
-            >
-              {t('nav.services')}
-            </button>
+          <nav className="hidden md:flex items-center" role="navigation" aria-label="Navegação principal">
             <button 
               onClick={() => scrollToSection('contact')} 
               className="text-[#39175d] hover:text-[#00e6c3] transition-colors font-semibold text-sm tracking-wide focus:outline-none focus:ring-2 focus:ring-[#00e6c3] focus:ring-offset-2 rounded-md px-2 py-1"
@@ -145,63 +97,6 @@ const Header = () => {
         {isMenuOpen && (
           <div id="mobile-navigation" className="md:hidden mt-4 pb-4 border-t border-[#00e6c3]/30" role="navigation" aria-label="Navegação móvel">
             <nav className="flex flex-col space-y-3 pt-4">
-              <Link 
-                to="/" 
-                onClick={() => setIsMenuOpen(false)} 
-                className="text-left text-[#39175d] hover:text-[#00e6c3] transition-colors font-semibold focus:outline-none focus:ring-2 focus:ring-[#00e6c3] focus:ring-offset-2 rounded-md px-2 py-1"
-                aria-label="Navegar para a seção inicial"
-              >
-                {t('nav.home')}
-              </Link>
-              <button 
-                onClick={() => {scrollToSection('techtalentsolutions'); setIsMenuOpen(false);}} 
-                className="text-left text-[#39175d] hover:text-[#00e6c3] transition-colors font-semibold focus:outline-none focus:ring-2 focus:ring-[#00e6c3] focus:ring-offset-2 rounded-md px-2 py-1"
-                aria-label="Navegar para a seção de soluções"
-              >
-                {t('nav.techTalentSolutions')}
-              </button>
-              <button 
-                onClick={() => {scrollToSection('process'); setIsMenuOpen(false);}} 
-                className="text-left text-[#39175d] hover:text-[#00e6c3] transition-colors font-semibold focus:outline-none focus:ring-2 focus:ring-[#00e6c3] focus:ring-offset-2 rounded-md px-2 py-1"
-                aria-label="Navegar para a seção de processo"
-              >
-                {t('nav.process')}
-              </button>
-              <button 
-                onClick={() => {scrollToSection('specialties'); setIsMenuOpen(false);}} 
-                className="text-left text-[#39175d] hover:text-[#00e6c3] transition-colors font-semibold focus:outline-none focus:ring-2 focus:ring-[#00e6c3] focus:ring-offset-2 rounded-md px-2 py-1"
-                aria-label="Navegar para a seção de especialidades"
-              >
-                {t('nav.specialties')}
-              </button>
-              <button 
-                onClick={() => {scrollToSection('whychoose'); setIsMenuOpen(false);}} 
-                className="text-left text-[#39175d] hover:text-[#00e6c3] transition-colors font-semibold focus:outline-none focus:ring-2 focus:ring-[#00e6c3] focus:ring-offset-2 rounded-md px-2 py-1"
-                aria-label="Navegar para a seção por que escolher"
-              >
-                {t('nav.whyChoose')}
-              </button>
-              <button 
-                onClick={() => {scrollToSection('about'); setIsMenuOpen(false);}} 
-                className="text-left text-[#39175d] hover:text-[#00e6c3] transition-colors font-semibold focus:outline-none focus:ring-2 focus:ring-[#00e6c3] focus:ring-offset-2 rounded-md px-2 py-1"
-                aria-label="Navegar para a seção sobre"
-              >
-                {t('nav.about')}
-              </button>
-              <button 
-                onClick={() => {scrollToSection('testimonials'); setIsMenuOpen(false);}} 
-                className="text-left text-[#39175d] hover:text-[#00e6c3] transition-colors font-semibold focus:outline-none focus:ring-2 focus:ring-[#00e6c3] focus:ring-offset-2 rounded-md px-2 py-1"
-                aria-label="Navegar para a seção de depoimentos"
-              >
-                {t('nav.testimonials')}
-              </button>
-              <button 
-                onClick={() => {scrollToSection('services'); setIsMenuOpen(false);}} 
-                className="text-left text-[#39175d] hover:text-[#00e6c3] transition-colors font-semibold focus:outline-none focus:ring-2 focus:ring-[#00e6c3] focus:ring-offset-2 rounded-md px-2 py-1"
-                aria-label="Navegar para a seção de serviços"
-              >
-                {t('nav.services')}
-              </button>
               <button 
                 onClick={() => {scrollToSection('contact'); setIsMenuOpen(false);}} 
                 className="text-left text-[#39175d] hover:text-[#00e6c3] transition-colors font-semibold focus:outline-none focus:ring-2 focus:ring-[#00e6c3] focus:ring-offset-2 rounded-md px-2 py-1"

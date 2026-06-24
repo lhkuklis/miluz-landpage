@@ -64,6 +64,7 @@ const translations = {
     'services.headhunting.title': 'Headhunting',
     'services.headhunting.description': 'Busca ativa de profissionais estratégicos e líderes para posições-chave.',
     'services.headhunting.detailed': 'Especialistas em encontrar líderes e talentos de alta performance, com processo confidencial e foco no impacto para o negócio.',
+    'services.cta': 'Solicitar diagnóstico gratuito',
 
     // Service Pages
     'service.back_to_services': 'Voltar aos serviços',
@@ -159,7 +160,6 @@ const translations = {
     'contact.info.title': 'Informações de contato',
     'contact.info.whatsapp': 'WhatsApp',
     'contact.info.email': 'E-mail',
-    'contact.info.linkedin': 'LinkedIn',
     'contact.sending': 'Enviando...',
     'contact.quick_response': 'Resposta rápida',
     'contact.quick_response_desc': 'Normalmente respondemos em até 2 horas úteis.',
@@ -225,6 +225,8 @@ const translations = {
     'home.whychoose.forprofessionals.desc': 'Oportunidades em empresas que valorizam talento e desenvolvimento.',
     'home.whychoose.process.title': 'Nosso processo',
     'home.whychoose.process.desc': 'Abordagem estruturada e transparente para acelerar contratações.',
+    'home.whychoose.consulting.title': 'Apoio consultivo estratégico',
+    'home.whychoose.consulting.desc': 'Orientação para otimizar seus processos de atração e retenção de talentos com mais eficiência.',
     'home.whychoose.stats.1': '500+',
     'home.whychoose.stats.2': '98%',
     'home.whychoose.stats.3': '6+',

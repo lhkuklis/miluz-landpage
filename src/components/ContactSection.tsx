@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Linkedin, MapPin, Send, CheckCircle } from 'lucide-react';
+import { Mail, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -16,13 +16,22 @@ const ContactSection = () => {
     company: '',
     message: t('contact.message.default')
   });
+
+  const formatPhone = (value: string) => {
+    const digits = value.replace(/\D/g, '').slice(0, 11);
+    if (digits.length === 0) return '';
+    if (digits.length <= 2) return `(${digits}`;
+    if (digits.length <= 6) return `(${digits.slice(0, 2)}) ${digits.slice(2)}`;
+    return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`;
+  };
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
+    const newValue = name === 'phone' ? formatPhone(value) : value;
     setFormData(prev => ({
       ...prev,
-      [name]: value
+      [name]: newValue
     }));
   };
 
@@ -73,12 +82,7 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: t('contact.info.email'),
-  link: 'mailto:contact@miluz.work'
-    },
-    {
-      icon: Linkedin,
-      label: t('contact.info.linkedin'),
-  link: 'https://www.linkedin.com/company/miluzwork'
+      link: 'mailto:contato@miluz.com.br'
     }
   ];
 
@@ -109,6 +113,8 @@ const ContactSection = () => {
                     name="name"
                     type="text"
                     required
+                    pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$"
+                    title="Use apenas letras e espaços no nome."
                     value={formData.name}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-[#00e6c3]/40 rounded-lg focus:ring-2 focus:ring-[#00e6c3] focus:border-transparent bg-white text-[#39175d] placeholder-[#39175d]/40"
@@ -128,6 +134,8 @@ const ContactSection = () => {
                     name="email"
                     type="email"
                     required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    title="Use um email válido, por exemplo joao@empresa.com"
                     value={formData.email}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-[#00e6c3]/40 rounded-lg focus:ring-2 focus:ring-[#00e6c3] focus:border-transparent bg-white text-[#39175d] placeholder-[#39175d]/40"
