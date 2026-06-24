@@ -1,33 +1,39 @@
 import React from 'react';
 import { Trophy, Search, Headphones } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const TechTalentSolutionsSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="techtalentsolutions" className="py-24 bg-slate-50">
       <div className="container mx-auto px-6 sm:px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <p className="text-sm uppercase tracking-[0.35em] text-slate-500 mb-4">Nossos diferenciais</p>
+          <p className="text-sm uppercase tracking-[0.35em] text-slate-500 mb-4">{t('home.techTalent.differentials.title')}</p>
           <h2 className="heading-2 mb-4 sm:mb-6 tracking-tight leading-tight">
-            Resultados mais rápidos com menos desgaste para sua equipe
+            {t('home.techTalent.title')}
           </h2>
+          <p className="text-base text-slate-600 leading-relaxed">
+            {t('home.techTalent.desc')}
+          </p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
           {[
             {
               icon: <Trophy className="h-7 w-7 text-white" />,
-              title: 'Contratação mais rápida',
-              desc: 'Processo otimizado para reduzir tempo de fechamento.'
+              title: t('home.techTalent.differentials.1.title'),
+              desc: t('home.techTalent.differentials.1.desc')
             },
             {
               icon: <Search className="h-7 w-7 text-white" />,
-              title: 'Busca ativa qualificada',
-              desc: 'Mapeamento e abordagem de profissionais alinhados.'
+              title: t('home.techTalent.differentials.2.title'),
+              desc: t('home.techTalent.differentials.2.desc')
             },
             {
               icon: <Headphones className="h-7 w-7 text-white" />,
-              title: 'Acompanhamento consultivo',
-              desc: 'Suporte do início da vaga até a contratação.'
+              title: t('home.techTalent.differentials.3.title'),
+              desc: t('home.techTalent.differentials.3.desc')
             }
           ].map((item, index) => (
             <div key={index} className="group rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">

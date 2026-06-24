@@ -1,5 +1,4 @@
 import React from 'react';
-import { LanguageProvider } from '@/contexts/LanguageContext';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import TechTalentSolutionsSection from '@/components/TechTalentSolutionsSection';
@@ -15,22 +14,20 @@ import ScrollToTopButton from '@/components/ScrollToTopButton';
 
 const Index = () => {
   return (
-    <LanguageProvider>
-      <div className="min-h-screen">
-        <Header />
-        <HeroSection />
-        <TechTalentSolutionsSection />
-        <ProcessSection />
-        <SpecialtiesSection />
-        <WhyChooseSection />
-        <AboutSection />
-        <TestimonialsSection />
-        <ContactSection />
-        <Footer />
-        <WhatsAppButton />
-        <ScrollToTopButton />
-      </div>
-    </LanguageProvider>
+    <div className="min-h-screen">
+      <Header />
+      <HeroSection />
+      <TechTalentSolutionsSection />
+      <ProcessSection />
+      <SpecialtiesSection />
+      <WhyChooseSection />
+      <AboutSection />
+      <TestimonialsSection />
+      <ContactSection />
+      <Footer />
+      <WhatsAppButton />
+      <ScrollToTopButton />
+    </div>
   );
 };
 

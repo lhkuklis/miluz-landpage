@@ -1,12 +1,8 @@
-import React, { createContext, useContext, useState } from 'react';
+import { createContext, useContext } from 'react';
 
-type Language = 'pt-BR';
-
-interface LanguageContextType {
-  language: Language;
-  setLanguage: (lang: Language) => void;
+type LanguageContextType = {
   t: (key: string) => string;
-}
+};
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
@@ -150,7 +146,7 @@ const translations = {
     'contact.form.phone': 'Telefone',
     'contact.form.company': 'Empresa',
     'contact.form.message': 'Mensagem',
-    'contact.form.submit': 'Enviar mensagem',
+    'contact.form.submit': 'Enviar via WhatsApp',
     'contact.placeholder.name': 'Ex. João Silva',
     'contact.placeholder.email': 'Ex. joao@empresa.com',
     'contact.placeholder.phone': 'Ex. +55 11 99999-9999',
@@ -234,14 +230,12 @@ const translations = {
 };
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('pt-BR');
-
   const t = (key: string): string => {
-    return (translations[language] as any)[key] || key;
+    return translations['pt-BR'][key as keyof typeof translations['pt-BR']] || key;
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ t }}>
       {children}
     </LanguageContext.Provider>
   );
