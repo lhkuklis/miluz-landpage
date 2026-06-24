@@ -67,13 +67,6 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center" role="navigation" aria-label="Navegação principal">
-            <button 
-              onClick={() => scrollToSection('contact')} 
-              className="text-[#39175d] hover:text-[#00e6c3] transition-colors font-semibold text-sm tracking-wide focus:outline-none focus:ring-2 focus:ring-[#00e6c3] focus:ring-offset-2 rounded-md px-2 py-1"
-              aria-label="Navegar para a seção de contato"
-            >
-              {t('nav.contact')}
-            </button>
           </nav>
 
           {/* Mobile Menu */}
@@ -97,13 +90,6 @@ const Header = () => {
         {isMenuOpen && (
           <div id="mobile-navigation" className="md:hidden mt-4 pb-4 border-t border-[#00e6c3]/30" role="navigation" aria-label="Navegação móvel">
             <nav className="flex flex-col space-y-3 pt-4">
-              <button 
-                onClick={() => {scrollToSection('contact'); setIsMenuOpen(false);}} 
-                className="text-left text-[#39175d] hover:text-[#00e6c3] transition-colors font-semibold focus:outline-none focus:ring-2 focus:ring-[#00e6c3] focus:ring-offset-2 rounded-md px-2 py-1"
-                aria-label="Navegar para a seção de contato"
-              >
-                {t('nav.contact')}
-              </button>
             </nav>
           </div>
         )}

@@ -32,7 +32,7 @@ const HeroSection = () => {
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="w-full sm:w-auto bg-[#00e6c3] text-slate-950 font-semibold px-10 py-4 rounded-full shadow-lg shadow-[#00e6c34d] hover:shadow-[#00e6c380] hover:brightness-110 transition duration-300"
+              className="w-full sm:w-auto bg-[#00e6c3] text-slate-950 font-semibold px-8 py-4 rounded-full shadow-lg shadow-[#00e6c34d] hover:bg-[#00c6a2] hover:shadow-[#00e6c380] transition duration-300"
             >
               {t('hero.cta')}
             </Button>
@@ -40,7 +40,7 @@ const HeroSection = () => {
               href="https://wa.me/5511969114510"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center border border-slate-200/30 text-slate-100 hover:bg-white/20 px-10 py-4 rounded-full transition duration-300"
+              className="w-full sm:w-auto inline-flex items-center justify-center border border-slate-200/30 text-slate-100 hover:bg-white/20 px-8 py-4 rounded-full transition duration-300"
             >
               {t('hero.learn_more')}
               <Play className="h-5 w-5 ml-2" />
